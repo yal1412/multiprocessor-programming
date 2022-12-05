@@ -1,5 +1,3 @@
-import java.util.concurrent.ForkJoinPool;
-
 public class Sequential {
 
     static int partition(int[] a, int left, int right) {

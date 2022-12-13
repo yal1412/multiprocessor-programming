@@ -4,13 +4,11 @@ import java.util.stream.IntStream;
 
 class Sequential
 {
-    private int numberOfVertex;
     private Graph graph;
 
     Sequential(Graph graph)
     {
         this.graph = graph;
-        this.numberOfVertex = graph.getSize();
     }
 
     private int degree(Integer i) {
@@ -101,7 +99,7 @@ class Sequential
         Sequential s = new Sequential(graph);
 
         long time = System.nanoTime();
-        int[] d = s.bfs(0);
+        s.bfs(0);
         System.out.println((System.nanoTime() - time) / 1000000);
 //        System.out.println(Arrays.toString(d));
     }

@@ -35,9 +35,8 @@ class Sequential
         while (frontier.length != 0) {
             int[] d = new int[frontier.length + 1];
             d[0] = 0;
-            int[] finalFrontier1 = frontier;
             for (int i = 0; i < frontier.length; i++) {
-                d[i + 1] = degree(finalFrontier1[i]);
+                d[i + 1] = degree(frontier[i]);
             }
 
             for (int i = 0; i < d.length - 1; i++){
